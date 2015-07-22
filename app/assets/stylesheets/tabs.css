@@ -1,0 +1,18 @@
+
+  .ui-tabs-vertical { width:55em; }
+  .ui-tabs-vertical .ui-tabs-nav { padding: .2em .1em .2em .2em; float: left; width: 12em; }
+  .ui-tabs-vertical .ui-tabs-nav li { clear: left; width: 100%; border-bottom-width: 1px !important; border-right-width: 0 !important; margin: 0 -1px .2em 0; }
+  .ui-tabs-vertical .ui-tabs-nav li a { display:block;text-decoration:none; }
+  .ui-tabs-vertical .ui-tabs-nav li.ui-tabs-active { padding-bottom: 0; padding-right: .1em; border-right-width: 1px; border-right-width: 1px; }
+  .ui-tabs-vertical .ui-tabs-panel { padding: 1em; float: right; width: 40em;}
+  #tabs h2 {margin-top:-0.8em;}
+  #tabs h2 {margin-bottom:-0.4em;}
+  
+  .ui-tabs2-vertical { width:48em; }
+  .ui-tabs2-vertical .ui-tabs2-nav { padding: .2em .1em .2em .2em; float: left; width: 12em; }
+  .ui-tabs2-vertical .ui-tabs2-nav li { clear: left; width: 100%; border-bottom-width: 1px !important; border-right-width: 0 !important; margin: 0 -1px .2em 0; }
+  .ui-tabs2-vertical .ui-tabs2-nav li a { display:block;text-decoration:none; }
+  .ui-tabs2-vertical .ui-tabs2-nav li.ui-tabs-active { padding-bottom: 0; padding-right: .1em; border-right-width: 1px; border-right-width: 1px; }
+  .ui-tabs2-vertical .ui-tabs2-panel { padding: 1em; float: right; width: 45em;}
+  #tabs2 h2 {margin-top:-0.6em;}
+  #tabs2 h2 {margin-bottom:-0.4em;}

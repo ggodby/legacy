@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Workspace</title>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+
+</head>
+<body>
+<div class="ui-widget">
+<div class="ui-widget-header" style="padding-top:10px;min-height:100px;height:100px;">
+<%=image_tag("pen64.png", :align=> "left")%><span  style="padding-left:1em;font-size:2em;font-weight: bold;">LEGACY TOOLS</span> <span  style="font-style: italic;font-size:1.8em;color:#666;">Beta</span>
+<ul class="jq-menu">
+      <li><a href="/">Home</a></li>
+      <% if user_signed_in? %>
+      <li><a href="/logout">Logout</a></li>
+      <li><a href="#">Tools </a>
+        <ul>
+              <li><a href="/tool1">I am Ok Your OK</a></li>
+              <li><a href="/tool2">The Kids Are Ok</a></li>
+              <li><a href="/tool3">Itemizer</a></li>
+              <li><a href="/tool4">Big Picture</a></li>
+              <li><a href="/tool5">Extras</a> </li>
+          </ul> 
+      </li>
+     
+      <%  else %>
+        <li><a href="/register">Register</a> </li>
+      <li><a href="/login">Login</a></li>
+     
+      <%  end %>
+      <li><a href="/help">Help</a> </li>
+  </ul>
+</div>  
+<div id="noticewarning" style="width:100%;clear:both;">
+ <p class="notice"><%= notice %></p>
+ <p class="alert"><%= alert %></p>
+</div>
+<div id="sitecontent" style="padding-left:10px;" class="ui-widget-content">
+<%= yield %>
+</div>
+</div>
+<div id="footer" style="margin-top:10px;padding:10px;clear:both;height:100px;width:100%;color:#333;background-color:#ccc;">
+<p><a href="http://legacyconsultancy.ca" target="_BLANK"><%= image_tag("legacy.png", :align=> "right",:style=>' padding-right:20px;') %></a><strong>Legacy Tools</strong> is a service of<br/>BEYOND NUMBERS<br/><a id="legacyButton" href="http://legacyconsultancy.ca" target="_BLANK">Legacy Consultancy</a></p>
+
+    
+</div>
+<script type="text/javascript">
+ $(function() {
+   $('.jq-menu').jqsimplemenu();
+   $( "#legacyButton" ).button();
+ });
+</script>
+</body>
+</html>
